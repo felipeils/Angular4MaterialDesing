@@ -1,0 +1,22 @@
+
+  <md-list>
+ <md-list-item> 
+   <md-input-container>
+  <input mdInput placeholder="Ingrese punto de partida" [(ngModel)]=origen value="">
+</md-input-container>
+ </md-list-item>
+ <md-list-item>
+   <md-input-container>
+  <input mdInput placeholder="Ingrese destino" [(ngModel)]=destino value="">
+</md-input-container>
+ </md-list-item>
+ 
+</md-list>
+
+
+<button md-raised-button (click)=searchDestino()>Buscar</button>
+<md-toolbar>distancia entre los puntos: {{distancia}}</md-toolbar>
+<md-toolbar>tiempo de llegada al destino:{{tiempo}}
+  
+</md-toolbar>
+
